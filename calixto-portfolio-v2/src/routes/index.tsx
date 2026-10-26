@@ -6,6 +6,7 @@ import hero from "@/assets/hero.jpg";
 import w1 from "@/assets/work-1.jpg";
 import w2 from "@/assets/work-2.jpg";
 import w3 from "@/assets/work-3.jpg";
+import heroTitle from "@/assets/hero-title.png";
 import { X } from "lucide-react";
 import { ShineBorder } from "@/components/ui/shine-border";
 import { GradientMeshBackground } from "@/components/ui/gradient-mesh-background";
@@ -121,10 +122,15 @@ function Index() {
           <p className="mb-6 text-xs uppercase tracking-[0.5em] text-brand">
             Fotógrafo & Videomaker
           </p>
-          <h1 className="font-display text-5xl font-extrabold leading-[0.9] md:text-[9rem]">
-            UM INSTANTE
-            <br />
-            <span className="text-outline">PARA SEMPRE</span>
+          <h1 className="max-w-xl md:max-w-2xl lg:max-w-3xl">
+            <span className="sr-only">Um instante para sempre</span>
+            <img
+              src={heroTitle}
+              alt="Um instante para sempre"
+              width={912}
+              height={521}
+              className="w-full h-auto object-contain select-none"
+            />
           </h1>
           <a
             href="#trabalhos"
